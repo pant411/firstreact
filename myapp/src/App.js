@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './Header';
 
 function App() {
   return(
     <div>
-      <Header />
+      <Header title = 'Thaivb.NET' />
 
       <div className="App">
         <h1>Hello Main Component</h1>
