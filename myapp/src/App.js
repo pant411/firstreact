@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './Header';
 
 function App() {
   /*return (
@@ -20,7 +21,7 @@ function App() {
       </header>
     </div>
   );*/
-  return(
+  /*return(
     <div className="App">
       <h1>Hello ReactWorld!!!</h1>
       <table border="1">
@@ -41,6 +42,16 @@ function App() {
         </tr>        
       </table>
     </div>
+  );*/
+  return(
+    <div>
+      <Header />
+
+      <div className="App">
+        <h1>Hello Main Component</h1>
+      </div>      
+    </div>
+
   );
 }
 
