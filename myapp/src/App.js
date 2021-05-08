@@ -3,28 +3,13 @@ import './App.css';
 import Header from './Header';
 
 function App() {
-  /*return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );*/
-  /*return(
-    <div className="App">
-      <h1>Hello ReactWorld!!!</h1>
-      <table border="1">
+  return(
+    <div>
+      <Header />
+
+      <div className="App">
+        <h1>Hello Main Component</h1>
+        <table border="1">
         <tr>
           <td>รหัสสินค้า</td>
           <td>ชื่อหนังสือ</td>
@@ -41,14 +26,6 @@ function App() {
           <td>112</td>
         </tr>        
       </table>
-    </div>
-  );*/
-  return(
-    <div>
-      <Header />
-
-      <div className="App">
-        <h1>Hello Main Component</h1>
       </div>      
     </div>
 
