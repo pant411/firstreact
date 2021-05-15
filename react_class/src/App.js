@@ -3,26 +3,19 @@ import React, { Component } from 'react';
 class App extends Component{
     constructor(){
        super();
-       this.state = {
-          data: 0
-       } ;
+       this.state = {cmdText: "สวัสดี React"};
+       this.setTextOnButton = this.setTextOnButton.bind(this);
     }
 
-    addData = () => {
-      this.setState(d => (
-        {
-          data: d.data + 1
-        }
-      ))
+    setTextOnButton(){
+      this.setState(() => {
+        return {cmdText:"ปุ่ม Button ถูกกด"}
+      });
     }
 
     render() {
-      return (
-        <div>
-          <p>ข้อมูลปัจจุบัน : {this.state.data}</p>
-          <button onClick={this.addData}>คลิก</button>
-        </div>
-      );
+      const {cmdText} = this.state;
+      return <button onClick={this.setTextOnButton}>{cmdText}</button>
     }
 }
 
